@@ -42,7 +42,7 @@ resource "google_storage_bucket" "bucket" {
     }
 
     condition {
-      num_newer_versions = var.num_newer_versions
+      num_newer_versions = var.versions_to_keep
     }
   }
 

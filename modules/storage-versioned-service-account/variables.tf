@@ -26,7 +26,7 @@ EOF
   default = false
 }
 
-variable "num_newer_versions" {
+variable "versions_to_keep" {
   description = <<EOF
 The number of version to keep before permanently deleting the object.
 Usually `1` is safe. The more versions it keeps, the more storage is used.
